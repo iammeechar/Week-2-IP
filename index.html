@@ -5,6 +5,7 @@
         <meta charset="utf-8">
         <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" >
         <link href="css/styles.css" rel="stylesheet" type="text/css" media="all" >
+        <script src = "js/scripts.js"></script>
     </head>
     <div class="container">
         <div class="row">
@@ -14,7 +15,7 @@
                 your date of birth in the space provided below 
             </P>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-6">
                 <h2>What Are Akan Names?</h2>
                 <p>The Akan people of Ghana frequently name their children after the day of the week 
                     they were born and the order in which they were born. 
@@ -22,25 +23,23 @@
                     of the person.
  </p>
             </div>
-            <P>Please Enter your birthdate is the provided space below: </P>
-            <form name="" onsubmit="event.preventDefault" evaluateDate()>
-                <label>
-                    Enter your Birthday:
-                    <input type="date" id="birthday" name="birthday" min="01-01-1900" required > 
-                    <span class="validity"></span>
-                </label>    
-            </form>
-
-            <p>Please pick your gender from the options below:</p>
-            <form>
+            <p>Please Enter your birthdate is the provided space below: </p>
+            <form name="Akan" onsubmit="event.preventDefault(); evaluateDate()">
+                <label for="birthday">Enter your Birthday:</label>
+                <p><input type="date" name="birthday" min="01-01-1900" required > </p>
+                
+                <p>Please pick your gender from the options below:</p>
+            
                 <input type="radio" id="male" name="gender" value="male">
                 <label for="male">Male</label><br>
                 <input type="radio" id="female" name="gender" value="female">
                 <label for="female">Female</label><br>
-              </form>
-              <P>
-                <button>Submit Age</button>
-            </P>
+                <button type="submit">Submit Age</button>
+                
+            </form>
+            <p id="result"></p> 
+
+            <p>For more about the Akan </p>
 
         </div>
     </div>
