@@ -8,7 +8,7 @@
     </head>
     <div class="container">
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-10">
             <h1>Welcome to the Akan Name Generator </h1>
             <P>In this website you will be able to  generate your Akan Name by entering
                 your date of birth in the space provided below 
@@ -23,10 +23,10 @@
  </p>
             </div>
             <P>Please Enter your birthdate is the provided space below: </P>
-            <form action="">
+            <form name="" onsubmit="event.preventDefault" evaluateDate()>
                 <label>
                     Enter your Birthday:
-                    <input type="date" name="birthday" min="01-01-1900" required > 
+                    <input type="date" id="birthday" name="birthday" min="01-01-1900" required > 
                     <span class="validity"></span>
                 </label>    
             </form>
